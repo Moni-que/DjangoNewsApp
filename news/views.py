@@ -64,3 +64,4 @@ def article(request,article_id):
     except Article.DoesNotExist:
         raise Http404()
     return render(request,"all-news/article.html", {"article":article})
+
